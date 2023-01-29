@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+/**
+ * Template Name: Events page
+ */
+
+
+get_header(); 
+
+?>
 
 
     <main>
@@ -9,21 +17,7 @@
 
    <h2>Upcoming Events</h2>
 
-   <!-- if want to display featured image from event page, otherwise trash -->
-   <!-- <?php
-        if(have_posts() ) : while(have_posts() ) :
-            the_post();
-   ?>
-   <?php the_post_thumbnail('medium', array(
-       'id' => 'shows-image',
-   )); ?>
-
-   <?php endwhile;
-   endif;
-   ?> -->
-   <!-- for featured image mentioned above -->
    
-
     <?php custom_post_type_events(); ?>
 
 <?php
@@ -44,7 +38,6 @@ $the_events = new WP_Query( $args );
 ?>
 
 
-<!-- <div class="col-sm-12 col-md-5 col-lg-3 show-card"> -->
 <div class="col-sm-12 ">
 <div class="event-info">
 

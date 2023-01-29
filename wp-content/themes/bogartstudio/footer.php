@@ -35,7 +35,7 @@
             </div>
             <div class="col-md-4 policies footer-newsletter">
                 <p>NEWSLETTER</p>
-                <p>Be the first to see my new works!</p>
+                <p>Be the first to see my new paintings!</p>
                 <?php echo do_shortcode('[contact-form-7 id="432" title="Newsletter form - Footer" html_id="footer-form"]'); ?>
             </div>
          

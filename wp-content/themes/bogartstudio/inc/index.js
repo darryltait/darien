@@ -89,6 +89,7 @@ const sliders1 = document.querySelectorAll(".page-id-60 .painting-container");
 const sliders2 = document.querySelectorAll(".page-id-575 .painting-container");
 const sliders3 = document.querySelectorAll(".page-id-577 .painting-container");
 const sliders4 = document.querySelectorAll(".page-id-579 .painting-container");
+const sliders5 = document.querySelectorAll(".page-id-862 .painting-container");
 
 const appearOptions = {
   threshold: 0,
@@ -119,5 +120,8 @@ sliders3.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 sliders4.forEach((slider) => {
+  appearOnScroll.observe(slider);
+});
+sliders5.forEach((slider) => {
   appearOnScroll.observe(slider);
 });

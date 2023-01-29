@@ -30,7 +30,7 @@
                             <?php if(function_exists('the_custom_logo')) {
                                 the_custom_logo();
                             }; ?>
-                             <p class="header-phone"><?php echo get_theme_mod('set_phone_info', 'Phone # here'); ?></p>
+                             <a href="tel:7194009631" class="telephone"><p class="header-phone"><?php echo get_theme_mod('set_phone_info', 'Phone # here'); ?></p></a>
                 </div>
                        
 

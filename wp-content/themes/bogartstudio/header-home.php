@@ -30,13 +30,6 @@
             <section class="header">
                 <!-- <div class="container"> -->
                 <div class="db-logo">
-                            <?php if(function_exists('the_custom_logo')) {
-                                the_custom_logo();
-                            }; ?>
-                            <p class="header-phone"><?php echo get_theme_mod('set_phone_info', 'Phone # here'); ?></p>
-                </div>
-                       
-
                      <!-- dropdown menu for screens less than 768px wide -->
                      <button class="nav-btn open-btn"><i class="fas fa-bars"></i></button>
                        
@@ -56,6 +49,14 @@
                                  </div>
                              </div>  
                             </div>  <!-- end of dropdown -->
+                            <?php if(function_exists('the_custom_logo')) {
+                                the_custom_logo();
+                            }; ?>
+                            <a href="tel:7194009631" class="telephone"><p class="header-phone"><?php echo get_theme_mod('set_phone_info', 'Phone # here'); ?></p></a>
+                </div>
+                       
+
+                    
                             <div class="horz-menu">
                                                 <?php 
                                                 wp_nav_menu( array(

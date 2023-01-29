@@ -25,20 +25,27 @@
                     <p class="medium"><?php the_field('medium'); ?></p>
                     <p class="size"><?php the_field('size'); ?> in</p>
 
-                    <span>
+                    <!-- <span> -->
+                    <div class="painting-price">
+                    <?php if( ! get_field('sold')): ?>
                     $<?php the_field('price'); ?>
+                    <?php endif; ?> </div>
+                    <p class="prints-available">
+                    <a href="https://darien-bogart.pixels.com" target="_blank">Prints available - Click here</a></p>
                     
-                    <?php if( get_field('sold')): ?>
+                    <?php /* if( get_field('sold')): ?>
                         <span class="sold">SOLD</span> <a href="https://darien-bogart.pixels.com" target="_blank">Click here for prints of this work</a>
-                        <?php endif; ?>
+                        <?php endif; */ ?>
                     <?php endif; ?>
-                    </span>
+                    <!-- </span> -->
                     
-
+                    <?php if( ! get_field('sold')): ?>
                     <p class="mounting-info">All originals framed in gold leaf 2&rdquo; deep floater frame</p>
+                    
 
                     <!-- <button class="buy">Email me to buy now!</button> -->
                     <?php echo do_shortcode('[contact-form-7 id="417" title="Buy now form" html_id="buy-now-form"]'); ?>
+                    <?php endif; ?>
 
                     
                     <div class="painting-info-social">
